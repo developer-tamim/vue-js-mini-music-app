@@ -264,20 +264,20 @@
         <div class="player-duration">03:06</div>
       </div>
     </div>
-
-    <auth />
+    <!-- Modal -->
+    <Auth />
   </div>
 </template>
 
 <script>
-import AppHeader from './components/Header.vue'
-import Auth from './components/Auth.vue'
+import AppHeader from './components/Header.vue';
+import Auth from './components/Auth.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     Auth
-  }
-}
+  },
+};
 </script>

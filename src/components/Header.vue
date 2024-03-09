@@ -24,19 +24,19 @@
 </template>
 
 <script>
-import { mapStore } from 'pinia'
-import useModalStore from '../stores/modal'
+import { mapStores } from 'pinia';
+import useModalStore from '../stores/modal';
 
 export default {
   name: 'AppHeader',
   computed: {
-    // ...mapStore(useModalStore)
+    ...mapStores(useModalStore)
   },
   methods: {
     toggoleAuthModal() {
       this.modalStore.isOpen = !this.modalStore.isOpen
       console.log(this.modalStore.isOpen)
     }
-  }
-}
+  },
+};
 </script>
